@@ -3,7 +3,8 @@ import { Text, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { styles, TPostProps } from ".";
 import { useAppDispatch } from "@/shared";
-import { setPost } from "../../slice";
+import { setPost } from "@/entities";
+
 
 export const Card: React.FC<TPostProps> = ({ post }) => {
   const navigation = useNavigation();
